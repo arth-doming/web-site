@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    font-family:'Poppins', sans-serif;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo {
+    color:rgb(255, 101, 29);
+    font-size: 28px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+header {
+    padding: 40px 4%;
+}
+
+/*sobre mim*/
+
+section.sobre {
+    padding: 40px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+section.sobre .txt{
+    color: white;
+}
+
+section.sobre .txt h1, h2{
+    font-size: 40px;
+    color: rgb(255, 101, 29);
+    margin-bottom: 5px;
+    font-family: "Savate", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+section.sobre .interface{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.img img {
+    width: 200px;
+    height: auto;
+    border-radius: 12%;
+    object-fit: cover;
+}
+
+section.portifolio .txt2{
+    color: white;
+}
+
+section.portifolio .txt2 h3{
+    font-size: 40px;
+    color: rgb(255, 101, 29);
+    margin-bottom: 10px;
+    font-family: "Savate", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/*estilo portifolio */
+section.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff2f;
+}
+
+section.portifolio .flex {
+    justify-content: center;
+    gap: 40px 60px; /* espaço entre colunas e linhas */
+    flex-wrap: wrap;
+}
+
+section.portifolio .flex > .img-port {
+    flex-basis: 300px; /* tamanho fixo menor */
+}
+
+.img-port {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 101, 29);
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    padding: 10px;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
